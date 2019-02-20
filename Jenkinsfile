@@ -6,6 +6,8 @@ node('master') {
     }    
     stage('Run tests') {
             sh 'set +e'
+            sh 'false'
+            sh 'true'
             sh 'mvn clean test'
     }
     
