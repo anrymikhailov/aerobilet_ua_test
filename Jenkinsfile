@@ -9,6 +9,6 @@ node('master') {
     }
     
     stage('reports') {
-    allure includeProperties: false, jdk: '', results: [[path: '/var/jenkins_home/workspace/aerobilet_ua_test_maven/allure-report']]
+    allure includeProperties: false, jdk: '', results: [[path: '/var/jenkins_home/workspace/aerobilet_ua_test/allure-report']]
 }
 }
