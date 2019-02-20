@@ -9,16 +9,6 @@ node('master') {
     }
     
     stage('reports') {
-    steps {
-	    script {
-	            allure([
-	                    includeProperties: false,
-	                    jdk: '',
-	                    properties: [],
-	                    reportBuildPolicy: 'ALWAYS',
-	                    results: [[path: '/var/jenkins_home/workspace/aerobilet_ua_test_maven/allure-report']]
-	            ])
-	    }
-    }
+    allure includeProperties: false, jdk: '', results: [[path: '/var/jenkins_home/workspace/aerobilet_ua_test_maven/allure-report']]
 }
 }
