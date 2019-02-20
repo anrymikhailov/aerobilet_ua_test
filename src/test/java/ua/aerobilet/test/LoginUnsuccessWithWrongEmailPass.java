@@ -51,7 +51,7 @@ public class LoginUnsuccessWithWrongEmailPass extends GridParallelTestBase {
 		loginPage.clickLoginButtonExpectError();
 		makeScreenshotForCheck();
 				//Your login information is incorrect. Please check your e-mail and password and try again
-		Assert.assertEquals("РќР°РґР°РЅР° С–РЅС„РѕСЂРјР°С†С–СЏ РЅРµРєРѕСЂРµРєС‚РЅР°. Р‘СѓРґСЊ Р»Р°СЃРєР°, РїРµСЂРµРІС–СЂС‚Рµ Р’Р°С€Сѓ Р°РґСЂРµСЃСѓ РµР»РµРєС‚СЂРѕРЅРЅРѕС— РїРѕС€С‚Рё С‚Р° РїР°СЂРѕР»СЊ, С– СЃРїСЂРѕР±СѓР№С‚Рµ С‰Рµ СЂР°Р·.", 
+		Assert.assertEquals("ffsdНадана інформація некоректна. Будь ласка, перевірте Вашу адресу електронної пошти та пароль, і спробуйте ще раз.", 
                     loginPage.getLoginError());
 		
 	}

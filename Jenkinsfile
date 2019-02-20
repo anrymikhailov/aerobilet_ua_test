@@ -5,6 +5,7 @@ node('master') {
         checkout scm
     }    
     stage('Run tests') {
+            sh 'set +e'
             sh 'mvn clean test'
     }
     
