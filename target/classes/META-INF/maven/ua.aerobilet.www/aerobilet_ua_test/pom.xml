@@ -45,7 +45,7 @@
 				<systemProperties>
 					<property>
 						<name>allure.results.directory</name>
-						<value>/var/lib/jenkins/workspace/aerobilet.ru/allure-results</value>
+						<value>/var/jenkins_home/workspace/aerobilet_ua_test_maven/allure-report</value>
 					</property>
 				</systemProperties>
             </configuration>
