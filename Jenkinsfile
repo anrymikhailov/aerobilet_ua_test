@@ -5,9 +5,7 @@ node('master') {
         checkout scm
     }    
     stage('Run tests') {
-            sh 'set +e'
-            sh 'mvn clean test'
-            sh 'true'
+            sh 'mvn clean test || true'
     }
     
     stage('reports') {
